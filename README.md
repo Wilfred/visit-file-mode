@@ -1,7 +1,7 @@
 # visit-file-mode
 
-visit-file-mode is a minor mode that allows you to jump to a file
-based on a path, line and column.
+visit-file-mode is an Emacs minor mode that allows you to jump to a
+file based on a path, line and column.
 
 For example, given a buffer containing an OCaml stack trace:
 
