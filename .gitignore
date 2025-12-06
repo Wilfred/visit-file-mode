@@ -1,0 +1,22 @@
+# Compiled Emacs Lisp files
+*.elc
+
+# Emacs backup files
+*~
+\#*\#
+.\#*
+
+# Auto-save files
+.saves-*
+auto-save-list
+
+# Emacs session files
+.session
+session.*
+
+# Flycheck temporary files
+flycheck_*.el
+
+# Package build artifacts
+*-pkg.el
+*-autoloads.el
