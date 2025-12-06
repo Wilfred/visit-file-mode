@@ -55,7 +55,7 @@
     )
   "List of patterns to match file paths with line and column numbers.
 Each pattern is a list of (REGEXP . CAPTURE-GROUPS) where
-CAPTURE-GROUPS is an alist mapping 'file, 'line, and 'column to
+CAPTURE-GROUPS is an alist mapping \\='file, \\='line, and \\='column to
 their respective capture group numbers.")
 
 (defun visit-file-mode--parse-match (pattern)
@@ -147,7 +147,7 @@ Press RET or click to visit the file at the specified location."
   (if (fboundp 'font-lock-flush)
       (font-lock-flush)
     (when font-lock-mode
-      (font-lock-fontify-buffer))))
+      (font-lock-ensure))))
 
 (provide 'visit-file-mode)
 ;;; visit-file-mode.el ends here
