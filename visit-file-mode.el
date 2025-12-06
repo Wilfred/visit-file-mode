@@ -30,7 +30,12 @@
 
 (defface visit-file-mode-highlight
   '((t :inherit link))
-  "Face used to highlight file paths in visit-file-mode."
+  "Face used to highlight file paths that exist in visit-file-mode."
+  :group 'visit-file-mode)
+
+(defface visit-file-mode-highlight-missing
+  '((t :inherit font-lock-warning-face))
+  "Face used to highlight file paths that don't exist in visit-file-mode."
   :group 'visit-file-mode)
 
 (defvar visit-file-mode-patterns
