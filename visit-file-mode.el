@@ -114,12 +114,12 @@ PATTERN should be an element from `visit-file-mode-patterns'."
             (let* ((match-data (visit-file-mode--parse-match pattern))
                    (file (nth 0 match-data))
                    (full-path (expand-file-name file)))
-              (put-text-property (match-beginning 1) (match-end 0)
+              (put-text-property (match-beginning 1) (match-end 1)
                                  'face
                                  (if (file-exists-p full-path)
                                      'visit-file-mode-highlight
                                    'visit-file-mode-highlight-missing))
-              (put-text-property (match-beginning 1) (match-end 0)
+              (put-text-property (match-beginning 1) (match-end 1)
                                  'mouse-face 'highlight)
               (setq found t))))
         (unless found
